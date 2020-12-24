@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'alyPro';
+  nom = '#19weuzy';
+  age = 26;
+  ok = false;
+champs = 'activer';
+
+
+onClickBtn(): void{
+    this.ok = !this.ok;
+    this.champs = this.ok ? 'desactiver' : 'activer';
+   /* if (this.ok) {
+      this.champs = 'activer';
+    } else {
+      this.champs = 'désactiver';
+    }*/
+  }
 }

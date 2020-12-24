@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="search">
+<hr>
+<div class="row">
+  <app-item-bien *ngFor="let b of biens | filter: search: 'title'" [bien]="b"  class="col-sm-6 col-md-4 mb-4"></app-item-bien>
+</div>
+
